@@ -15,10 +15,10 @@
             <div id="movieCarousel" class="carousel slide mb-3" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="https://via.placeholder.com/800x400/FF5733/FFFFFF?text=Movie1" class="d-block w-100" alt="Movie 1">
+                  <img src="https://i.ytimg.com/vi/f5IRCGKZgJY/maxresdefault.jpg" class="d-block w-100" alt="Movie 1">
                 </div>
                 <div class="carousel-item">
-                  <img src="https://via.placeholder.com/800x400/C70039/FFFFFF?text=Movie2" class="d-block w-100" alt="Movie 2">
+                  <img src="https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,quality=75,width=960,height=480/event-covers/wd/88cd887d-32ba-49c5-8e8d-539bec92ed07" class="d-block w-100" alt="Movie 2">
                 </div>
               </div>
               <a class="carousel-control-prev" href="#movieCarousel" role="button" data-slide="prev">
@@ -45,7 +45,7 @@
                 <button type="submit" class="btn btn-primary">Search</button>
             </form>
         
-            <p>Searching for {{ searchTerm }}</p>
+            <p>Searching for : {{ searchTerm }}</p>
             <br />
         
             <div class="row row-cols-1 row-cols-md-3 g-4"> 
@@ -58,10 +58,11 @@
                         </a>
                         <p class="card-text">{{ movie.description}}</p>
                         {% if movie.url %}
-                        <a href="{{ movie.url}}" class="btn btn-primary">
-                            Movie Link
+                        <a href="{{ movie.url}}" class="btn btn-primary" target="_blank">
+                            Trailer
                         </a>
                         {% endif %}
+                        </a>
                         </div>
                     </div>
                 </div>
